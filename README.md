@@ -147,7 +147,7 @@ Notice we have a side menu and then we have our ng-view that will change dependi
 *Now that our ```<ng-view>``` is set up, let's head over to app.js and actually prepare our router.
 * You have the code below, but I want you to really try to not look at it until you've completed all of these next steps. I promise it's really not too tricky, just try your best and ask for  help if you get stuck.
 * 1) add a config property onto your app variable that takes in a anonymous function as it's only argument.
-* 2) inject ```$routeProvider``` into that anonymous function you just build
+* 2) inject ```$routeProvider``` into that anonymous function you just built
 * 3) Now we're going to set up our routes. Here is the criteria.
      - When the user is at the index page ('/'), use ```homeTmpl.html``` as the templateUrl and use ```homeCtrl``` as the controller.
      - When the user is at the settings page ('/settings'), use ```settingsTmpl.html``` as the templateUrl and use ```settingsCtrl``` as the controller.
@@ -197,7 +197,7 @@ app.config(function($routeProvider){
 * 
 
 ###Step 6: Fixing Product Pages
-* The last thing we have to do is show certain product data depending on which page the user is it. For example, if the user is on the shoes page, we want to show them the shoes data. If they're on the socks page, we want to show them the socks data. Remember that in our index.html page our menu looks like this. 
+* The last thing we have to do is show certain product data depending on which page the user is in. For example, if the user is on the shoes page, we want to show them the shoes data. If they're on the socks page, we want to show them the socks data. Remember that in our index.html page our menu looks like this. 
 ```html
     <div class="menu">
       <ul>
